@@ -30,7 +30,7 @@ with open("input.txt", "r") as f:
         count += 1
         if count == 1:
             continue
-        curr_board = curr_board + [(int(num), 0) for num in line.rstrip().split(" ") if num != ""]
+        curr_board = curr_board + [(int(num), 0) for num in line.rstrip().split()]
 
         if count == 6:
             boards.append(curr_board)
